@@ -1,4 +1,3 @@
-
 function sum(a: number, b: number): number {
     return a + b;
 }
@@ -40,18 +39,18 @@ multiplication(10, 20, 30);
 multiplication(10, 20);
 multiplication(10);
 
-let n: number = 3; // глобальная переменная
+let n: number = 3; // глобальна змінна
 square();
-// ошибка компиляции: переменная res не объявлена
-//console.log("Квадрат числа " + n + " равен " + res);
+// помилка компіляції: змінна res не оголошена
+//console.log("Квадрат числа " + n + " дорівнює " + res);
 
 function square() {
     let res = 0;
-    res = n * n; // глобальная переменная n
-    console.log("Квадрат числа " + n + " равен " + res);
-    let m = 10; // локальная переменная m
-    res = m * m; // локальная переменная m
-    console.log("Квадрат числа " + m + " равен " + res);
+    res = n * n; // глобальна змінна n
+    console.log("Квадрат числа " + n + " дорівнює " + res);
+    let m = 10; // локальна змінна m
+    res = m * m; // локальна змінна m
+    console.log("Квадрат числа " + m + " дорівнює " + res);
 }
 
 function sumOfNumbers(firstNumber: number, ...numberArray: number[]): number {
@@ -82,5 +81,3 @@ let result2 = addition("7", "8");
 console.log(result2);
 let result3 = addition(true, false);
 console.log(result3);
-
-
